@@ -1,0 +1,58 @@
+/*-------------------------------------------
+  NEXTイベント ウィジェット
+-------------------------------------------*/
+.epv-next-event-widget{border:1px solid #e0e0e0;border-radius:8px;background-color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.05);overflow:hidden;font-family:sans-serif;max-width:500px;margin:1em 0}
+.epv-widget-header{
+    /* background-colorとcolorはインラインスタイルで指定 */
+    padding:8px 15px;
+    font-weight:700;
+    font-size:14px;
+    letter-spacing:1px;
+}
+.epv-widget-body{padding:20px}
+.epv-widget-body p{margin:0;color:#555}
+.epv-widget-body a.epv-event-link{display:block;text-decoration:none;color:#333;transition:background-color .2s;margin:-20px;padding:20px}
+.epv-widget-body a.epv-event-link:hover{background-color:#f7f7f7}
+
+/* 日付と場所のタグの共通スタイル */
+.epv-meta-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+/* 場所タグのスタイル */
+.epv-event-location {
+    /* background-colorとcolorはインラインスタイルで指定 */
+}
+/* 日付タグのスタイル */
+.epv-event-date{
+    background-color:#f0f0f0;
+    color:#333;
+}
+
+.epv-event-title{font-size:18px;font-weight:700;line-height:1.4; display: block; clear: both;}
+
+/*-------------------------------------------
+  ポップアップ
+-------------------------------------------*/
+#epv-popup-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:2147483647;display:flex;justify-content:center;align-items:center;padding:20px}
+#epv-popup-wrap{background:#fff;width:100%;max-width:600px;max-height:90vh;overflow-y:auto;border-radius:8px;box-shadow:0 5px 15px rgba(0,0,0,0.3);display:flex;flex-direction:column}
+#epv-popup-header{display:flex;justify-content:space-between;align-items:center;padding:15px 25px;border-bottom:1px solid #ddd;flex-shrink:0}
+#epv-popup-header h3{margin:0;font-size:20px;line-height:1.4}
+#epv-popup-close{background:none;border:none;font-size:32px;line-height:1;cursor:pointer;padding:0 5px;color:#aaa}
+#epv-popup-close:hover{color:#333}
+#epv-popup-body{padding:25px;overflow-y:auto}
+#epv-popup-body p#epv-popup-date{font-size:1.1em;font-weight:700;color:#333;margin-top:0}
+#epv-popup-body #epv-popup-content{line-height:1.7;color:#333}
+#epv-popup-map{margin-top:25px;line-height:0}
+#epv-popup-map iframe{width:100%;height:350px;border:0;border-radius:8px}
+
+/* ポップアップ表示中の背景スクロールを無効化 */
+body.epv-popup-open {
+    overflow: hidden;
+}
