@@ -98,5 +98,3 @@
 
 ### 1.0.0
 * ver.1.1.0を公開
-
----"# Event-Popup-Viewer" 
