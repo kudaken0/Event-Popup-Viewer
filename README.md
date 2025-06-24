@@ -64,16 +64,20 @@
 ## スクリーンショット
 
 -  **ウィジェット表示例**
+  
     ![01.png](assets/images/01.png)
 
 -   **ポップアップ表示例**
+   
     ![05.png](assets/images/05.png)
 
 -  **イベント編集画面**
+  
     ![02.png](assets/images/02.png)
     ![03.png](assets/images/03.png)
 
 -  **プラグイン設定画面**
+  
     ![04.png](assets/images/04.png)
 
 
